@@ -1,0 +1,243 @@
+body{
+    padding: 100;
+    height: 100vh;
+    background-color:     #0E0E0E;
+    margin: 0;
+    color: white;
+
+    
+    
+
+}
+
+header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    font-size: bold;
+   
+}
+.navbar{
+    display: flex;
+    max-width: 1550px;
+    justify-content: space-between;
+    align-items: end;
+    height: 100px;
+    width: 100%;
+    font-size: bold;
+    margin-top: 30px;
+    font-size: 10px;
+}
+.logo-icon{
+    width: 50px;
+    display: flex;
+    align-items: end;
+    margin-left: 0px;
+    
+}
+.logo-icon img {
+    height: 80px;
+}
+ ul {
+    display: flex;
+    margin-left: 0px;
+}
+ ul li{
+    list-style: none;
+    margin-left: 60px;
+    
+  
+}
+ .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: bold;
+    font-size: large;
+    
+    
+    
+}
+ ul li a:hover{
+    text-decoration: underline;
+    transition: all 2s ease-in-out;
+}
+.navbar .toggle-btn{
+    display: none;
+    cursor: pointer;
+    font-size: xx-large;
+    margin-right: 10px;
+    margin-top: 23px;
+}
+
+.search-bar{
+    border-radius: 25px;
+    border-right: 0;
+    padding: 10px;
+    font-size: 17px;
+    border: 0;
+    background: transparent;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.search-bar:focus{
+    border: 0;
+    border-color: white;
+    border-radius: 35px;
+    box-shadow: none;
+    outline: none;
+
+
+}
+
+.dropdown-link{
+    position: absolute;
+    height: 300px;
+    right: 4rem;
+    top: 150px;
+    width: 300px;
+    background-color: hsl(0 0% 100% / 0.1);
+    backdrop-filter:  blur(15px);
+    z-index: 999;
+    overflow: hidden;
+    display: none;
+    background: t;
+    border-radius: 10px;
+    align-items: right;
+    
+} 
+.dropdown-link li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    list-style: none;
+    color: black;
+    font-size: large;
+}
+.dropdown-link li a{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    transition: all .7s ease-in-out;
+
+}
+
+
+
+@media (max-width: 992px){
+    .navbar .list {
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+        margin-bottom: 10px;
+
+    }
+    .dropdown-link{
+        display: none;
+    }
+    .search{
+        display: flex;
+        height: 40px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    
+}
+
+
+
+
+
+
+.search{
+    display: flex;
+    height: 40px;
+}
+.search-icon{
+    
+    cursor: pointer;
+    border-radius: 6px;
+    margin-right: 10px;
+    border: none;
+    float: left;
+    width: 20%;
+    padding: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+}
+.cart{
+    cursor: pointer;
+}
+.search-1{
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 20px;
+
+}
+.cart-pro{
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+    margin-left: 18px;
+    font-size: xx-large;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+.cart{
+    margin-right: 15px;
+}
+
+.about  h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.about {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+.about p{
+    margin-top: 1px;
+}
+.about button{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: goldenrod;
+    outline: none;
+    border: 0;
+    box-shadow: #0000002b 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.about button a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+   
+}
+.about .scrol-img{
+    margin-top: 40px;
+    display: flex;
+    
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.about  img{
+    width: 150px;
+    border-radius: 30px;
+    height: 300px;
+    
+    
+}
