@@ -14,31 +14,18 @@
 --radialSecondaryAccent: radial-gradient(#6f2677, #c442d1);
 
 }
-@import url('https://fonts.googleapis.com/css?family=Noto%20Sans%20Old%20South%20Arabian:700|Noto%20Sans%20Old%20South%20Arabian:400');
+@import url('https://fonts.googleapis.com/css?family=Irish%20Grover:700|Irish%20Grover:400');
 
 body {
-  font-family: 'Noto Sans Old South Arabian';
+  font-family: 'Irish Grover';
   font-weight: 400;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Noto Sans Old South Arabian';
+  font-family: 'Irish Grover';
   font-weight: 700;
 }
 
-html {font-size: 100%;} /* 16px */
-
-h1 {font-size: 4.210rem; /* 67.36px */}
-
-h2 {font-size: 3.158rem; /* 50.56px */}
-
-h3 {font-size: 2.369rem; /* 37.92px */}
-
-h4 {font-size: 1.777rem; /* 28.48px */}
-
-h5 {font-size: 1.333rem; /* 21.28px */}
-
-small {font-size: 0.750rem; /* 12px */}
 
 
 
@@ -245,7 +232,7 @@ header{
 }
 
 .about  h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Irish Grover';
     font-size: 70px;
     margin-bottom: 30px;
     color: var(--secondary);
@@ -294,7 +281,7 @@ header{
     
 }
 
-.about .container{
+.about .container1{
     display: flex;
     width: 500px;
     background-color: var(--primary);
@@ -309,17 +296,17 @@ header{
     color: var(--background);
     margin-left: 550px;
 }
-.container p{
+.container1 p{
     margin: 0;
 
 }
-.container .bold{
+.container1 .bold{
     font-size: 20px;
     font-weight: bolder;
 }
 
  .services{
-    height: 700px;
+    height: 900px;
    background: var(--text);
      }
      .services-head{
@@ -351,35 +338,36 @@ header{
      display: grid;
      grid-template-columns: repeat(3,1fr);
      column-gap: 2rem;
+     row-gap: 2rem;
      padding-left: 60px;
      padding-right: 60px;
      }
      section.services .card-grid .card{
      background: var(--text);
      
+     height: 250px;
+     width: 300px;
+     border-radius: 10px;
      text-align: left;
      transition: all .2s ease;
      border: 2px solid #c442d1;
      
      }
      section.services .card-grid .card img{
-     position: absolute;
-     top: -1.5rem;
-     left: 50%;
-     transform: translateX(-50%);
-     color: var();
+    margin-bottom: 0;
+    height: 200px;
+    border-radius: 10px;
      }
   
      section.services .card-grid .card p{
      font-family: 'Lato', sans-serif;
      color: var(--background);
-     line-height: 1.6;
+     margin-top: 0;
      align-items: left;
      justify-content: left;
      text-align: left;
-     
      padding: 0;
-     margin-top: 180px;
+     
      }
      section.services .card-grid .card:hover{
      
@@ -390,5 +378,94 @@ header{
      section.services .card-grid .card:hover p{
      
      }
+
+
+     .about2{
+        padding: 3rem;
+        }
+        .about2 h1{
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        }
+        section.about2 h1 span{
+        color: var(--primary);
+        }
+        section.about h3{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        }
+        section.about2 p{
+        font-family: 'Lato', sans-serif;
+        color: var(--text);
+        line-height: 1.9rem;
+        margin-bottom: 1rem;
+        }
+        .left img{
+            height:400px ;
+             width:700px;
+             border-radius: 20px;
+        }
+        .flex-1{
+            flex: 1;
+            }
+           .about2 .right{
+            height: 500px;
+            width:800px;
+            text-align: left;
+            background-color: hsl(0 0% 100% / 0.1);
+    backdrop-filter:  blur(15px);
+    z-index: 999;
+    border-radius: 30px;
+    padding-left: 1rem;
+
+            }
+            .about2 .container{
+                display: flex;
+                background-color: transparent;
+            }
+
+            main{
+                padding: 200px;
+            }
+          
+
+           .upgrade{
+            background-color: #d19dd7;
+                display: flex;
+                column-gap: 2rem;
+                align-items: center;
+                padding: 70px;
+                color: #080408;
+                border-radius: 60px;
+                height: 80px;
+            }
+            .improve{
+                width: 1000px;
+                
+            }
+
+
+
+            footer{
+                display: flex;
+                padding: 200px 100px 0;
+                font-family: 'Courier New', Courier, monospace;
+                bottom: 0;
+            }
+            table { 
+                padding: 30px;
+            } 
+            td, th, tr, table {
+              border: 130px ;
+                border-spacing: 30px;
+            }
+            th {
+                text-align: left;
+                color: #6f2677;
+                font-size: 20px;
+          }
+
 
 
