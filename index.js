@@ -1,15 +1,15 @@
 //toggle button for responsiveness
-import React from "react";
-import ReactDom from "react-dom";
+// import React from "react";
+// import ReactDom from "react-dom";
   
-var date = "tuesday";
+// var date = "tuesday";
 
-ReactDom.render(
-  <div>
-    <h1>Toggle Button For Responsiveness {date}</h1>
-  </div>,
-  document.getElementById("root")
-)
+// ReactDom.render(
+//   <div>
+//     <h1>Toggle Button For Responsiveness {date}</h1>
+//   </div>,
+//   document.getElementById("root")
+// )
 
 
 
