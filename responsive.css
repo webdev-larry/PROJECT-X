@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Irish%20Grover:700|Irish%20Grover:400');
+
+
+@media (max-width: 992px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        
+    }
+    .navbar .list {
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+        margin-bottom: 10px;
+
+    }
+    .dropdown-link{
+        display: none;
+    }
+    .search{
+        display: flex;
+        height: 40px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+
+    .about  h1{
+
+        font-family: 'Irish Grover';
+        font-size: 40px;
+        margin-bottom: 30px;
+        color: var(--secondary);
+        
+    }
+    .about {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        height: 70vh;
+        
+    }
+    
+    .about p{
+        margin-top: 1px;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 15px;
+        margin-bottom: 1px;
+        font-family: "Oswald", sans-serif;
+        line-height: 2rem;
+    }
+    .about button{
+        margin-top: 2rem;
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        background-color: var(--primary);
+        outline: none;
+        border: 0;
+        box-shadow: #0000002b 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+    .about button a{
+        text-decoration: none;
+        color: black;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    
+       
+    }
+   
+    
+    .about .container1{
+        display: flex;
+        width: 400px;
+        background-color: var(--primary);
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        
+        border-radius: 30px;
+        height: 50px;
+        margin-top: 17rem;
+        
+        color: var(--background);
+        margin-left: 4rem;
+    }
+    .container1 .padd{
+        padding: 0;
+        display: flex;
+        column-gap: 1rem;
+        
+    }
+    .container1 p{
+        margin: 0;
+        font-size: 13px;
+        padding: 0;
+        height: 22px;
+    
+    }
+    .container1 .bold{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+    .services{
+       height: 800px;
+       background: var(--text);
+       
+         }
+         .services-head{
+         text-align: center;
+         padding-top: 3rem;
+         margin-top: 0rem;
+         margin-bottom: 0.2rem;
+         line-height: 3rem;
+         color: var(--secondary);
+         font-size: 30px;
+         
+         }
+         .services-head + p{
+         color: var(--background);
+         font-family: "Oswald", sans-serif;
+         margin-top: 2px;
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 1rem;
+         font-weight: 100;
+         width: 400px;
+         margin-left: 3rem;
+         font-size: 13px;
+         }
+         .card i{
+         width: 50px;
+         margin-bottom: 0.5rem;
+         
+         }
+         section.services .card-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 20px;
+            row-gap: 2rem;
+            padding-left: 100px;
+            padding-right: 60px;
+         }
+         section.services .card-grid .card{
+         background: var(--text);
+         height: 250px;
+         width: 300px;
+         border-radius: 10px;
+         text-align: left;
+         transition: all .2s ease;
+         
+         
+         }
+         section.services .card-grid .card img{
+        margin-bottom: 0;
+        height: 200px;
+        border-radius: 10px;
+         }
+      
+         section.services .card-grid .card p{
+         font-family: "Oswald", sans-serif;
+         color: var(--background);
+         margin-top: 0;
+         align-items: left;
+         justify-content: left;
+         text-align: left;
+         padding: 0;
+         line-height: 1rem;
+         font-size: 1rem;
+         font-weight: 200;
+         }
+         section.services .card-grid .card:hover{
+         
+         }
+         section.services .card-grid .card:hover h2{
+         
+         }
+         section.services .card-grid .card:hover p{
+         
+         }
+
+
+
+
+
+
+         .card-grid {
+            position: relative;
+            padding: 10px 30px;
+            margin-top: 30px;
+        }
+        
+        button.left {
+            position: absolute;
+            left: 0;
+            top: 7%;
+            transform: translateY(-50%);
+
+        }
+        
+        button .right {
+            position: relative;
+            right: 0;
+            top: 7%;
+            transform: translateY(-50%);
+        }
+        
+        .scroll-images {
+            position: relative;
+            width: 100%;
+            padding: 40px 0px;
+            height: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .scroll-images {
+            &::-webkit-scrollbar {
+              display: none;
+            }
+          }
+        
+        .card {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            min-width: 250px;
+            height: 200px;
+            padding: 0px 0px;
+            margin: 1px 10px;
+            
+            border: 1px solid #f1f1f1;
+            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+            box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
+        }
+        
+        
+        
+        .scroll-images::-webkit-scrollbar {
+            width: 5px;
+            height: 8px;
+            background-color: #aaa;
+        }
+        
+        .scroll-images::-webkit-scrollbar-thumb {
+            background-color: black;
+        }
+        
+        button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+    
+}
+
+
+

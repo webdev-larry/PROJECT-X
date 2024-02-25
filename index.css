@@ -14,12 +14,11 @@
 --radialSecondaryAccent: radial-gradient(#6f2677, #c442d1);
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Irish%20Grover:700|Irish%20Grover:400');
 
-body {
-  font-family: 'Irish Grover';
-  font-weight: 400;
-}
+
 
 h1, h2, h3, h4, h5 {
   font-family: 'Irish Grover';
@@ -35,6 +34,9 @@ body{
     background-color:   var(--background);
     margin: 0;
     color:var(--text);
+    text-transform: uppercase;
+    line-height: 1rem;
+  
     
 
     
@@ -163,27 +165,6 @@ header{
 
 
 
-@media (max-width: 992px){
-    .navbar .list {
-        display: none;
-    }
-    .navbar .toggle-btn{
-        display: block;
-        margin-bottom: 10px;
-
-    }
-    .dropdown-link{
-        display: none;
-    }
-    .search{
-        display: flex;
-        height: 40px;
-        margin-left: 50px;
-        margin-bottom: 10px;
-    }
-
-    
-}
 
 
 
@@ -232,6 +213,7 @@ header{
 }
 
 .about  h1{
+
     font-family: 'Irish Grover';
     font-size: 70px;
     margin-bottom: 30px;
@@ -291,7 +273,7 @@ header{
     gap: 1rem;
     border-radius: 30px;
     height: 70px;
-    margin-top: 18rem;
+    margin-top: 22rem;
     position: relative;
     color: var(--background);
     margin-left: 550px;
@@ -360,14 +342,16 @@ header{
      }
   
      section.services .card-grid .card p{
-     font-family: 'Lato', sans-serif;
+     font-family: "Oswald", sans-serif;
      color: var(--background);
      margin-top: 0;
      align-items: left;
      justify-content: left;
      text-align: left;
      padding: 0;
-     
+     line-height: 1rem;
+     font-size: 1rem;
+     font-weight: 200;
      }
      section.services .card-grid .card:hover{
      
@@ -380,18 +364,24 @@ header{
      }
 
 
-     .about2{
+     section .about2{
         padding: 3rem;
+        background-color: #f2ecf3;
+        
         }
         .about2 h1{
+            font-family: "Oswald", sans-serif;
+            font-size: 25px;
+            font-weight: 500px;
+            
+        font-style: normal;
         margin-bottom: 1rem;
-        font-size: 1.6rem;
-        font-weight: 600;
+        
         }
         section.about2 h1 span{
         color: var(--primary);
         }
-        section.about h3{
+        section.about2 h3{
         font-size: 1rem;
         margin-bottom: 1rem;
         font-weight: 600;
@@ -422,6 +412,65 @@ header{
 
             }
             .about2 .container{
+                display: flex;
+                background-color: transparent;
+            }
+
+
+      .sell{
+        padding: 3rem;
+        background-color: #f2ecf3;
+
+        
+        }
+        .sell h1{
+            font-family: "Oswald", sans-serif;
+            font-size: 25px;
+            font-weight: 500px;
+            color: #080408;
+            
+        font-style: normal;
+        margin-bottom: 1rem;
+        
+        }
+        section.sell h1 span{
+        color: var(--primary);
+        }
+        section.sell h3{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        color: #080408;
+        }
+        section.sell p{
+        font-family: "Oswald", sans-serif;
+        color: var(--text);
+        line-height: 1.9rem;
+        margin-bottom: 1rem;
+        font-weight: 400px;
+        color: #080408;
+        }
+        .left img{
+            height:400px ;
+             width:500px;
+             border-radius: 30px;
+            margin-left:70px;
+        }
+        .flex-1{
+            flex: 1;
+            }
+           .sell .right{
+            height: 500px;
+            width:800px;
+            text-align: left;
+            background-color: hsl(0 0% 100% / 0.1);
+            backdrop-filter:  blur(15px);
+            z-index: 999;
+            border-radius: 30px;
+            padding-left: 1rem;
+
+            }
+            .sell .container{
                 display: flex;
                 background-color: transparent;
             }
