@@ -247,14 +247,8 @@ header{
 
    
 }
-.about .scrol-img{
-    margin-top: 40px;
-    display: flex;
-    
-    gap: 5px;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .about  img{
     width: 150px;
     border-radius: 30px;
@@ -316,13 +310,18 @@ header{
      margin-bottom: 0.5rem;
      
      }
-     section.services .card-grid{
-     display: grid;
-     grid-template-columns: repeat(3,1fr);
-     column-gap: 2rem;
-     row-gap: 2rem;
-     padding-left: 60px;
-     padding-right: 60px;
+   
+     button.left, button.right{
+        display: none;
+     }
+     .scroll-images {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        padding-left: 60px;
+        padding-right: 60px;
+
      }
      section.services .card-grid .card{
      background: var(--text);

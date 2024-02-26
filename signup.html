@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="sign.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+    .error {
+  color: #FF0000;
+}
+   </style>
+<body>
+
+<?php
+$fullNameErr = $emailErr= "";
+    $fullName = $userName = $email  = $DOB =  $phoneNumber= $password=  $countryState= $gender="";
+
+    if($_SERVER["REQUEST_METHOD"]== "POST") {
+      if (empty($_POST["fullName"])) {
+        $fullNameErr = "Full Name is required";
+      } else {
+      $fullName = test_input($_POST["fullName"]);
+      if (!preg_match("/^[a-zA-Z-' ]*$/",$fullName)) {
+        $fullNameErr = "Only letters and white space allowed";
+      }
+  
+      }
+
+      $userName = test_input($_POST["userName"]);
+      
+        $email = test_input($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+          $emailErr = "Invalid email format";
+        }else {
+          $email = test_input($_POST["email"]);
+          }
+        $gender = test_input($_POST["gender"]);
+        $DOB = test_input($_POST["DOB"]);
+        $phoneNumber = test_input($_POST["phoneNumber"]);
+        $password = test_input($_POST["password"]);
+        $countryState = test_input($_POST["countryState"]);
+    }
+    function test_input($data){
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data ;
+    }
+    
+    ?>
+
+
+  <div class="container">
+    <div class="title">SIGN UP</div>
+    <div class="content">
+      <form enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>"  method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="fullName" placeholder="Enter your name"  required>
+            <span class="error"> *<?php echo $fullNameErr;?></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" name="userName" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="email" placeholder="Enter your email" required>
+            <span class="error"> *<?php echo $emailErr;?></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name="phoneNumber" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" name="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">State</span>
+            <select  name="countryState" required>
+                <option value="">Select state</option>  
+                <option value="AB">Abia State</option>
+                <option value="AD">Adamawa State</option>
+                <option value="AK">Akwa Ibom State</option>
+                <option value="AN">Anambra State</option>
+                <option value="BA">Bauchi State</option>
+                <option value="BY">Bayelsa State</option>
+                <option value="BE">Benue State</option>
+                <option value="BO">Borno State</option>
+                <option value="CR">Cross River State</option>
+                <option value="DE">Delta State</option>
+                <option value="EB">Ebonyi State</option>
+                <option value="ED">Edo State</option>
+                <option value="EK">Ekiti State</option>
+                <option value="EN">Enugu State</option>
+                <option value="FC">Federal Capital Territory</option>
+                <option value="GO">Gombe State</option>
+                <option value="IM">Imo State</option>
+                <option value="JI">Jigawa State</option>
+                <option value="KD">Kaduna State</option>
+                <option value="KN">Kano State</option>
+                <option value="KT">Katsina State</option>
+                <option value="KE">Kebbi State</option>
+                <option value="KO">Kogi State</option>
+                <option value="KW">Kwara State</option>
+                <option value="LA">Lagos</option>
+                <option value="NA">Nasarawa State</option>
+                <option value="NI">Niger State</option>
+                <option value="OG">Ogun State</option>
+                <option value="ON">Ondo State</option>
+                <option value="OS">Osun State</option>
+                <option value="OY">Oyo State</option>
+                <option value="PL">Plateau State</option>
+                <option value="SO">Sokoto State</option>
+                <option value="TA">Taraba State</option>
+                <option value="YO">Yobe State</option>
+                <option value="ZA">Zamfara State</option>
+            </select>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" value="male" id="dot-1">
+          <input type="radio" name="gender" value="female" id="dot-2">
+          <input type="radio" name="gender"  value="others" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="input-box">
+            <span class="details">Date Of Birth</span>
+            <input style="height: 45px;
+            width: 40%;
+            outline: none;
+            font-size: 16px;
+            border-radius: 5px;
+            padding-left: 15px;
+            border: 1px solid #ccc;
+            border-bottom-width: 2px;
+            transition: all 0.3s ease;" type="date" name="DOB" id="">
+        </div>
+        <div class="button">
+          <input type="submit"  value="SIGN UP">
+        </div>
+        <div class="copy"> copyright 2019 - <?php
+        
+       echo   date("y/m/d/l"); 
+  ?></div>
+      </form>
+    </div>
+  </div>
+<div class="result" >
+<?php
+   echo $fullName ;
+ echo "<br>";
+ echo $userName ;
+  echo "<br>";
+  echo $email ;
+  echo "<br>";
+  echo $DOB; 
+  echo "<br>";
+  echo $phoneNumber;
+   echo "<br>"; 
+   echo $password;
+   echo "<br>";
+   echo $countryState;
+   echo "<br>";
+   echo $gender;
+
+?>
+
+
+</div>
+
+  <div><?php
+ "copyright 2019 - ".date("y"); 
+  ?></div>
+</body>
+</html>
