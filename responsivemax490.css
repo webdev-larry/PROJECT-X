@@ -368,13 +368,15 @@
             
         }
 
-        footer .xp{
-            width: 200px;
-           justify-self: start;
-            height: 100px;
+        footer p{
+            width: 100%;
+           text-align: justify;
             margin-top: 0;
             padding: 0;
-            text-align: ;
+            
+        }
+        footer table{
+            display: none;
         }
 
 
