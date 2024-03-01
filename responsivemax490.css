@@ -19,6 +19,9 @@
     }
     .dropdown-link{
         display: none;
+        background-color: hsl(0 0% 100% / 0.1);
+        backdrop-filter:  blur(15px);
+        z-index: 999;
     }
     .search{
         display: flex;
