@@ -28,7 +28,7 @@
     }
 
      .about{
-        max-width: 100%;
+        min-width: 100%;
      }
     .about  h1{
 
@@ -48,7 +48,7 @@
         
     }
     
-    .about p{
+    .abouknht p{
         margin-top: 1px;
         text-align: center;
         padding-left: 2rem;
@@ -377,6 +377,11 @@
         }
         footer table{
             display: none;
+        }
+
+        .copyrite {
+            color: #f1f1f1;
+
         }
 
 
