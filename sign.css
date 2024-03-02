@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Irish%20Grover:700|Irish%20Grover:400');
 *{
   margin: 0;
   padding: 0;
@@ -6,18 +8,40 @@
   font-family: 'Poppins',sans-serif;
 }
 body{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 110vh;
+  display: grid;
+  
+  align-items: top;
   padding: 10px;
   background: linear-gradient(135deg, #d19dd7,#6f2677);
 }
+@media (min-width: 700px){
+  .form {
+    margin-left: 500px;
+  }
+}
+
+@media (max-width: 500px){
+  .form {
+    margin-left: 200px;
+  }
+}
+
+.name{
+  margin-bottom: 10px;
+  justify-content: left;
+  margin-left: 0%;
+}
+.name h1{
+ font-family: 'Irish Grover';
+ 
+}
+.form {}
 .container{
   max-width: 700px;
   width: 100%;
   background-color: #080408;
-  padding: 25px 30px;
+  padding: 25px 30px ;
   border-radius: 5px;
   box-shadow: 0 5px 10px  #ccc;
 }
@@ -162,9 +186,8 @@ form .user-details .input-box{
   margin-left: 20px;
 }
 .copy{
-  position: absolute;
-  right: 20px;
-  color: black;
+  position: absolute; 
+  color: rgb(252, 248, 248);
   justify-content: center;
   text-align: center;
 }

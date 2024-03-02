@@ -51,8 +51,10 @@ $fullNameErr = $emailErr= "";
     }
     
     ?>
-
-
+<div class="name">
+  <h1>X AUDIO STORY</h1>
+</div>
+<div class="form">
   <div class="container">
     <div class="title">SIGN UP</div>
     <div class="content">
@@ -158,38 +160,14 @@ $fullNameErr = $emailErr= "";
         <div class="button">
           <input type="submit"  value="SIGN UP">
         </div>
-        <div class="copy"> copyright 2019 - <?php
-        
-       echo   date("y/m/d/l"); 
-  ?></div>
+        <div class="copy"> 
+          <p>Already have an account ? <span><a href="">Sign in </a></span> </p>
+        </div>
       </form>
     </div>
   </div>
-<div class="result" >
-<?php
-   echo $fullName ;
- echo "<br>";
- echo $userName ;
-  echo "<br>";
-  echo $email ;
-  echo "<br>";
-  echo $DOB; 
-  echo "<br>";
-  echo $phoneNumber;
-   echo "<br>"; 
-   echo $password;
-   echo "<br>";
-   echo $countryState;
-   echo "<br>";
-   echo $gender;
-
-?>
-
-
 </div>
 
-  <div><?php
- "copyright 2019 - ".date("y"); 
-  ?></div>
+
 </body>
 </html>
