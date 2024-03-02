@@ -22,9 +22,9 @@
 <div class="box-form">
 	<div class="left">
 		<div class="overlay">
-        <h1>Hello World.</h1>
+        <h1>X AUDIO STORY.</h1>
 		<h3 id="h1"></h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		<p id="h1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 		Curabitur et est sed felis aliquet sollicitudin</p>
 		<span>
 			<p>login with social media</p>
@@ -44,7 +44,7 @@
 			<br>
             <div style="display: flex; align-items: end;">
                 <input type="password" placeholder="password  " class="password"  name="password"  >
-                <span><i class='bx bx-hide eye-icon'></i></span>
+                <span><i  class='bx bx-hide eye-icon'></i></span>
             </div>
 			
 			
@@ -69,7 +69,31 @@
 
 
 
-<script src="./index.js"></script>
+<script type="text/javascript" src="./index.js">
+
+var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    if (minute < 10) {  
+      minute = "0" + minute;  
+    }  
+    if (second < 10) {  
+      second = "0" + second;  
+    }  
+    if (hour < 12) {  
+      welcome = "Good Morning";  
+    } else if (hour < 17) {  
+      welcome = "Good Afternoon";  
+    } else {  
+      welcome = "Good Evening";  
+    }  
+    document.getElementById ("h1").innerHTML =  welcome + "</font>" ;  
+    
+
+
+</script>
   
 </body>
 </html>

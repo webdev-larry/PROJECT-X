@@ -1,19 +1,3 @@
-//toggle button for responsiveness
-// import React from "react";
-// import ReactDom from "react-dom";
-  
-// var date = "tuesday";
-
-// ReactDom.render(
-//   <div>
-//     <h1>Toggle Button For Responsiveness {date}</h1>
-//   </div>,
-//   document.getElementById("root")
-// )
-
-
-
-
 var toggleBtn =document.querySelector(".toggle-btn")
 var toggleBtnIcon =document.querySelector(".toggle-btn i")
 var dropDownMenu =document.querySelector(".dropdown-link")
@@ -103,5 +87,52 @@ function search() {
     leftButton.addEventListener("click", leftScroll);
     rightButton.addEventListener("click", rightScroll);
   });
+
+
+
+  const forms = document.querySelector(".right"),
+pwShowHide = document.querySelectorAll(".eye-icon");
+pwShowHide.forEach(eyeIcon => {
+eyeIcon.addEventListener("click", () => {
+  let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+  
+  pwFields.forEach(password => {
+      if(password.type === "password"){
+          password.type = "text";
+          eyeIcon.classList.replace("bx-hide", "bx-show");
+          return;
+      }
+      password.type = "password";
+      eyeIcon.classList.replace("bx-show", "bx-hide");
+  })
+  
+})
+})
+
+
+
+
+
+//greet user
+var welcome;  
+    var date = new Date();  
+    var hour = date.getHours();  
+    var minute = date.getMinutes();  
+    var second = date.getSeconds();  
+    if (minute < 10) {  
+      minute = "0" + minute;  
+    }  
+    if (second < 10) {  
+      second = "0" + second;  
+    }  
+    if (hour < 12) {  
+      welcome = "Good Morning";  
+    } else if (hour < 17) {  
+      welcome = "Good Afternoon";  
+    } else {  
+      welcome = "Good Evening";  
+    }  
+    document.getElementById ("h1").innerHTML =  welcome + "</font>" ;  
+    
 
 
