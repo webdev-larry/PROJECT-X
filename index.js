@@ -90,8 +90,8 @@ function search() {
 
 
 
-  const forms = document.querySelector(".right"),
-pwShowHide = document.querySelectorAll(".eye-icon");
+  const forms = document.querySelector("#right"),
+pwShowHide = document.querySelectorAll("#eye-icon");
 pwShowHide.forEach(eyeIcon => {
 eyeIcon.addEventListener("click", () => {
   let pwFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
@@ -107,13 +107,16 @@ eyeIcon.addEventListener("click", () => {
   })
   
 })
-})
+});
+
+
 
 
 
 
 
 //greet user
+ 
 var welcome;  
     var date = new Date();  
     var hour = date.getHours();  
@@ -126,13 +129,13 @@ var welcome;
       second = "0" + second;  
     }  
     if (hour < 12) {  
-      welcome = "Good Morning";  
+      welcome = "good morning";  
     } else if (hour < 17) {  
-      welcome = "Good Afternoon";  
+      welcome = "good afternoon";  
     } else {  
-      welcome = "Good Evening";  
+      welcome = "good evening";  
     }  
-    document.getElementById ("h1").innerHTML =  welcome + "</font>" ;  
-    
+console.log('welcome')
+document.getElementById ("time").innerHTML =  welcome ; 
 
 
