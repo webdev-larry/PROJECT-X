@@ -90,7 +90,7 @@ function search() {
 
 
 
-  const forms = document.querySelector("#right"),
+  var forms = document.querySelector("#right"),
 pwShowHide = document.querySelectorAll("#eye-icon");
 pwShowHide.forEach(eyeIcon => {
 eyeIcon.addEventListener("click", () => {
