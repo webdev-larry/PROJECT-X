@@ -522,6 +522,22 @@ header{
                 color: #6f2677;
                 font-size: 20px;
           }
+          .trending{
+            padding: 30px;
+            border: 1rem white;
+            border-radius: 30px;
+            background-color: hsl(0 0% 100% / 0.1);
+            backdrop-filter:  blur(15px);
+            z-index: 999;
+            width: 80%;
+            align-items: center;
+            margin-left: 15px;
+            
+          }
+.trending img{
+    border-radius: 30px;
+    
 
+}
 
 
