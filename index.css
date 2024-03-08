@@ -539,6 +539,11 @@ header{
     
 
 }
+.trending p{
+    align-items: end;
+    justify-content: left;
+    text-align: left;
+}
 
 
 #progress {
