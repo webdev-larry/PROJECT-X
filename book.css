@@ -1,0 +1,80 @@
+.services{
+    height: 400px;
+   background: var(--text);
+     }
+     .services-head{
+     
+     text-align: center;
+     margin-top: 2rem;
+     margin-bottom: 0.2rem;
+     line-height: 10.5rem;
+     color: var(--secondary);
+     }
+     .services-head + p{
+     color: var(--background);
+     font-family: 'Lato', sans-serif;
+     margin-top: 0.5rem;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 1rem;
+     font-weight: 400;
+     width: 700px;
+     margin-left: 28rem;
+     }
+     .card i{
+     width: 50px;
+     margin-bottom: 0.5rem;
+     
+     }
+   
+     button.left, button.right{
+        display: none;
+     }
+     .scroll-images {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+        row-gap: 2rem;
+        padding-left: 60px;
+        padding-right: 60px;
+
+     }
+     section.services .card-grid .card{
+     background: var(--text);
+     transform: skew(10deg,1deg);
+     height: 250px;
+     width: 300px;
+     border-radius: 10px;
+     text-align: left;
+     transition: all .2s ease;
+     border: 2px solid #c442d1;
+     
+     }
+     section.services .card-grid .card img{
+    margin-bottom: 0;
+    height: 200px;
+    border-radius: 10px;
+     }
+  
+     section.services .card-grid .card p{
+     font-family: "Oswald", sans-serif;
+     color: var(--background);
+     margin-top: 0;
+     align-items: left;
+     justify-content: left;
+     text-align: left;
+     padding: 0;
+     line-height: 1rem;
+     font-size: 1rem;
+     font-weight: 200;
+     }
+     section.services .card-grid .card:hover{
+     
+     }
+     section.services .card-grid .card:hover h2{
+     
+     }
+     section.services .card-grid .card:hover p{
+     
+     }
