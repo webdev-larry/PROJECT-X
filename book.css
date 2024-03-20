@@ -970,6 +970,7 @@ header{
     
 }
 .scroll-images{
+    padding: 20px;
     margin-top: 0;
     position: relative;
     width: 450px;
