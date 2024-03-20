@@ -792,21 +792,7 @@ header{
            font-size: 1rem;
            font-weight: 200;
            }
-           section.services .card-grid .card:hover{
-           
-           }
-           section.services .card-grid .card:hover h2{
-           
-           }
-           section.services .card-grid .card:hover p{
-           
-           }
-  
-  
-  
-  
-  
-  
+    
            .card-grid {
               position: relative;
               padding: 10px 30px;
@@ -964,6 +950,34 @@ header{
          font-size: 1rem;
          font-weight: 200;
          }
-        
+       
+         
+
 }
 
+.Headtitle{
+    text-align: left;
+    justify-content: left;
+    align-items: end;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-left: 1rem;
+}
+
+.trendingslide {
+    display: flex;
+    margin-top: 0;
+    
+}
+.scroll-images{
+    margin-top: 0;
+    position: relative;
+    width: 450px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
