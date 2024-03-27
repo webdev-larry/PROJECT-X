@@ -115,6 +115,6 @@ var welcome;
       welcome = "good evening";  
     }  
 console.log('welcome')
-document.getElementById ("time").innerHTML =  welcome ; 
+
 
 
