@@ -421,6 +421,7 @@ header{
             }
             .about2 .container{
                 display:grid;
+                height: inherit !important;
                 max-width: 1200px;
                 width: 100%;
                 grid-template-columns: repeat(auto-fit, minmax(200px,1fr));

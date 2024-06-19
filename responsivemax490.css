@@ -243,12 +243,12 @@
             justify-content: center;
             align-items: center;
             min-width: 250px;
-            height: inherit;
+            height: inherit !important;
             padding: 0px 0px;
             margin: 1px 10px;
             
             border: 1px solid #f1f1f1;
-            overflow: hidden;
+            overflow: hidden !important;
             -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
             box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%);;
         }
@@ -276,6 +276,7 @@
 
         .about2 {
             height: inherit !important;
+            position: relative !important;
             
            }
         .about2 .left{
@@ -298,6 +299,9 @@
             height: 10px;
             line-height: 0rem;
         }
+        .about2 .card{
+            height: inherit !important;
+        }
 
         .sell .container{
             
@@ -311,7 +315,7 @@
             
         }
         .sell{
-            height: 500px;
+            height: inherit;
         }
         .sell .right{
             width: 60%;
