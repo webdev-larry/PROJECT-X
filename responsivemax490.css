@@ -274,9 +274,10 @@
         }
 
 
-        .about2 {
+        section .about2 {
             height: inherit !important;
-            position: relative !important;
+            
+            
             
            }
         .about2 .left{
@@ -300,7 +301,7 @@
             line-height: 0rem;
         }
         .about2 .card{
-            height: inherit !important;
+            height: 30rem !important;
         }
 
         .sell .container{
