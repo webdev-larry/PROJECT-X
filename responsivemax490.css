@@ -275,7 +275,7 @@
 
 
         .about2 {
-            height: 800px;
+            height: inherit !important;
             position: relative;
            }
         .about2 .left{

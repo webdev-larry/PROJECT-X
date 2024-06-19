@@ -367,20 +367,26 @@ header{
 
      section .about2{
         padding: 3rem;
-        background-color: #f2ecf3;
+       
         
         }
         .about2 h1{
             font-family: "Oswald", sans-serif;
             font-size: 25px;
             font-weight: 500px;
-            
-        font-style: normal;
-        margin-bottom: 1rem;
+            color: #6f2677 !important;
+            font-style: normal;
+            margin-bottom: 1rem;
         
         }
-        section.about2 h1 span{
-        color: var(--primary);
+        section .Sh{
+        color: #6f2677;
+        }
+        section .card-text{
+            color: #f2ecf3;
+        }
+        section .card{
+            background-color: #080408;
         }
         section.about2 h3{
         font-size: 1rem;
