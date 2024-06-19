@@ -167,8 +167,8 @@
          }
          section.services .card-grid .card{
          background: var(--text);
-         height: 250px;
-         width: 300px;
+         height: inherit;
+         
          border-radius: 10px;
          text-align: left;
          transition: all .2s ease;
@@ -242,8 +242,8 @@
             display: inline-block;
             justify-content: center;
             align-items: center;
-            min-width: 250px;
-            height: 200px;
+            min-width: inherit;
+            height: inherit;
             padding: 0px 0px;
             margin: 1px 10px;
             
@@ -276,7 +276,7 @@
 
         .about2 {
             height: inherit !important;
-            position: relative;
+            
            }
         .about2 .left{
             width: 100%;

@@ -387,6 +387,7 @@ header{
         }
         section .card{
             background-color: #080408;
+            height: inherit;
         }
         section.about2 h3{
         font-size: 1rem;
