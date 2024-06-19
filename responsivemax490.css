@@ -19,7 +19,7 @@
     }
     .dropdown-link{
         display: none;
-        background-color: #727271;
+        background-color: #727271 !important;
         
         z-index: 999;
     }
