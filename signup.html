@@ -13,6 +13,59 @@
 }
    </style>
 <body>
+  <header class="sticky-top navbar">
+        <div class="navbar">
+            <div class="logo-icon">
+            <h1>X</h1>
+            </div>
+            
+                <ul class="list">
+                    <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px; margin-bottom: 5px;" class="fa-solid fa-house"></i><a href="">HOME</a></li>
+                    <li style="display: flex; justify-content: center;align-items: end; ">  <i  style="margin-right: 10px; margin-bottom: 5px;" class="fa-solid fa-book"></i><a href="./books.html">STORIES</a></li>
+                    <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px; margin-bottom: 5px;"  class="fa-solid fa-user fa-fade"></i> <a href="./signup.html"> SIGN UP/SIGN IN</a></li>
+                    <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px;
+                    margin-bottom: 5px;" class="fa-solid fa-address-book "></i>
+                        <a href="">CONTACT US</a></li>
+                </ul>
+                
+            
+            <div class="search">
+                <div class="search-1">
+                    <input  class="search-bar" type="text" id="myInput" onkeyup="search()" placeholder="Search..."  >
+                    <button class="search-icon"  type="submit"><i class="fa fa-search"></i></button>
+
+                </div>
+                
+    
+                
+            </div>
+            <div class="toggle-btn">
+                <img
+                onclick="toggle()"class="fa-solid  fa-bars "
+                src="https://cdn.prod.website-files.com/64aceaf9cb10fc1c8e4efdbc/64cce1822d31503d831c2cfb_Group%201948757647%20(1).svg"
+                loading="lazy"
+                alt=""
+                class="image-73"
+              />
+            </div>
+  
+
+        </div>
+        <div id="dropdown" class="dropdown-link">
+            <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px; margin-bottom: 5px;" class="fa-solid fa-house"></i><a href="">HOME</a></li>
+            <li style="display: flex; justify-content: center;align-items: end; ">  <i  style="margin-right: 10px; margin-bottom: 5px;" class="fa-solid fa-book"></i><a href="./books.html">STORIES</a></li>
+            <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px; margin-bottom: 5px;"  class="fa-solid fa-user fa-fade"></i> <a href="./signup.html"> SIGN UP/SIGN IN</a></li>
+            <li style="display: flex; justify-content: center;align-items: end; "> <i style="margin-right: 10px;
+            margin-bottom: 5px;" class="fa-solid fa-address-book "></i>
+                <a href="">CONTACT US</a></li>
+        </div>
+
+       
+        </header>
+
+
+
+
 
 <?php
 $fullNameErr = $emailErr= "";
