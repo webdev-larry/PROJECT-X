@@ -114,7 +114,16 @@ var welcome;
     } else {  
       welcome = "good evening";  
     }  
-console.log('welcome')
+console.log('welcome');
+
+
+
+const blocks = document.getElementsByClassName(".about, .services, .about2, .calm, .up, .leg");
+anime({
+  targets: "blocks",
+  translateX: 270,
+  delay: anime.stagger(100), // increase delay by 100ms for each elements.
+});
 
 
 
