@@ -290,7 +290,7 @@ header{
      }
      .services .sample{
         background-image: url() ;
-        background-size: auto;
+        background-size:contain;
         background-repeat: no-repeat;
         
      }
