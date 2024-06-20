@@ -51,16 +51,7 @@
         
     }
     
-    .abouknht p{
-        margin-top: 1px;
-        text-align: center;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        font-size: 15px;
-        margin-bottom: 1px;
-        font-family: "Oswald", sans-serif;
-        line-height: 2rem;
-    }
+    
     .about button{
         margin-top: 2rem;
         width: 150px;
@@ -90,7 +81,7 @@
         justify-content: center;
         border-radius: 30px;
         height: 50px;
-        margin-top: 19rem;
+        margin-top: 15rem;
         color: var(--background);
         
     }
@@ -123,10 +114,11 @@
 
 
     .services{
-       height: 800px;
+       height: inherit !important;
        
        
          }
+         
          .services-head{
          text-align: center;
          padding-top: 3rem;
@@ -285,9 +277,9 @@
         }
 
 
-        section .about2 {
-            height: inherit !important;
-            margin-top: 60px !important;
+         .about2 {
+            display: block;
+            
             
             
             
@@ -313,7 +305,7 @@
             line-height: 0rem;
         }
         .about2 .card{
-            height: 40rem !important;
+            
             margin-bottom: 10px !important;
         }
 
@@ -329,7 +321,7 @@
             
         }
         .sell{
-            height: inherit;
+            height: 200px;
         }
         .sell .right{
             width: 60%;

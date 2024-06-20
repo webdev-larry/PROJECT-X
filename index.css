@@ -361,12 +361,14 @@ header{
      }
    
 
-
-     section .about2{
+        .about2{
         padding: 3rem;
         align-items: center;
         justify-content: space-between;
-        margin-left: 15px;
+        margin-left: 8px;
+        align-content: center;
+            
+            
        
         
         }
@@ -377,10 +379,12 @@ header{
             color: #6f2677 !important;
             font-style: normal;
             margin-bottom: 1rem;
+            
         
 
         }
         section .card{
+            
             animation: cardAnim 2s ease 0s 1 normal forwards;
         }
         @keyframes cardAnim{
@@ -463,36 +467,36 @@ header{
 
       .sell{
         padding: 3rem;
-        background-color: #f2ecf3;
+       
 
         
         }
         .sell h1{
-            font-family: "Oswald", sans-serif;
+            
             font-size: 25px;
             font-weight: 500px;
-            color: #080408;
+            color: #6f2677 !important;
             
         font-style: normal;
         margin-bottom: 1rem;
         
         }
         section.sell h1 span{
-        color: var(--primary);
+        
         }
         section.sell h3{
         font-size: 1rem;
         margin-bottom: 1rem;
         font-weight: 600;
-        color: #080408;
+        
         }
         section.sell p{
         font-family: "Oswald", sans-serif;
-        color: var(--text);
+        
         line-height: 1.9rem;
         margin-bottom: 1rem;
         font-weight: 400px;
-        color: #080408;
+      
         }
         .left img{
             height:400px ;

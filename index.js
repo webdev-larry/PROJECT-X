@@ -1,71 +1,71 @@
-var toggleBtn =document.querySelector(".toggle-btn")
-var toggleBtnIcon =document.querySelector(".toggle-btn i")
-var dropDownMenu =document.querySelector(".dropdown-link")
+// var toggleBtn =document.querySelector(".toggle-btn")
+// var toggleBtnIcon =document.querySelector(".toggle-btn i")
+// var dropDownMenu =document.querySelector(".dropdown-link")
 
-toggleBtn.onclick=function () {
-dropDownMenu.classList.toggle('open')
-var isOpen = dropDownMenu.classList.contains('open')
-toggleBtnIcon.classList = isOpen
-? "fa-solid fa-bars"
-:  "fa-solid fa-xmark"
+// toggleBtn.onclick=function () {
+// dropDownMenu.classList.toggle('open')
+// var isOpen = dropDownMenu.classList.contains('open')
+// toggleBtnIcon.classList = isOpen
+// ? "fa-solid fa-bars"
+// :  "fa-solid fa-xmark"
 
-}
-//make it visible and dissappear
-function toggle() {
-    var drop = document.getElementById("dropdown");
-    if (drop.style.display === "none") {
-      drop.style.display = "block";
-    } else {
-      drop.style.display = "none";
-    }
-  }
+// }
+// //make it visible and dissappear
+// function toggle() {
+//     var drop = document.getElementById("dropdown");
+//     if (drop.style.display === "none") {
+//       drop.style.display = "block";
+//     } else {
+//       drop.style.display = "none";
+//     }
+//   }
 
    
 
 
 
   //horizontal scrolling
-  document.addEventListener("DOMContentLoaded", function () {
-    const scrollImages = document.querySelector("#scroll-images");
-    const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
-    const leftButton = document.querySelector("#left");
-    const rightButton = document.querySelector("#right");
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   const scrollImages = document.querySelector("#scroll-images");
+  //   const scrollLength = scrollImages.scrollWidth - scrollImages.clientWidth;
+  //   const leftButton = document.querySelector("#left");
+  //   const rightButton = document.querySelector("#right");
 
-    function checkScroll() {
-      const currentScroll = scrollImages.scrollLeft;
-      if (currentScroll === 0) {
-        leftButton.setAttribute("disabled", "true");
-        rightButton.removeAttribute("disabled");
-      } else if (currentScroll === scrollLength) {
-        rightButton.setAttribute("disabled", "true");
-        leftButton.removeAttribute("disabled");
-      } else {
-        leftButton.removeAttribute("disabled");
-        rightButton.removeAttribute("disabled");
-      }
-    }
+  //   function checkScroll() {
+  //     const currentScroll = scrollImages.scrollLeft;
+  //     if (currentScroll === 0) {
+  //       leftButton.setAttribute("disabled", "true");
+  //       rightButton.removeAttribute("disabled");
+  //     } else if (currentScroll === scrollLength) {
+  //       rightButton.setAttribute("disabled", "true");
+  //       leftButton.removeAttribute("disabled");
+  //     } else {
+  //       leftButton.removeAttribute("disabled");
+  //       rightButton.removeAttribute("disabled");
+  //     }
+  //   }
 
-    scrollImages.addEventListener("scroll", checkScroll);
-    window.addEventListener("resize", checkScroll);
-    checkScroll();
+  //   scrollImages.addEventListener("scroll", checkScroll);
+  //   window.addEventListener("resize", checkScroll);
+  //   checkScroll();
 
-    function leftScroll() {
-      scrollImages.scrollBy({
-        left: -200,
-        behavior: "smooth"
-      });
-    }
+  //   function leftScroll() {
+  //     scrollImages.scrollBy({
+  //       left: -200,
+  //       behavior: "smooth"
+  //     });
+  //   }
 
-    function rightScroll() {
-      scrollImages.scrollBy({
-        left: 200,
-        behavior: "smooth"
-      });
-    }
+  //   function rightScroll() {
+  //     scrollImages.scrollBy({
+  //       left: 200,
+  //       behavior: "smooth"
+  //     });
+  //   }
 
-    leftButton.addEventListener("click", leftScroll);
-    rightButton.addEventListener("click", rightScroll);
-  });
+  //   leftButton.addEventListener("click", leftScroll);
+  //   rightButton.addEventListener("click", rightScroll);
+  // });
 
 
 
@@ -118,11 +118,19 @@ console.log('welcome');
 
 
 
-const blocks = document.getElementsByClassName(".about, .services, .about2, .calm, .up, .leg");
-anime({
-  targets: "blocks",
-  translateX: 270,
-  delay: anime.stagger(100), // increase delay by 100ms for each elements.
+
+
+const animateElement = document.querySelector(
+  ".head0, .head11, .head22, .head33, .head44, .card"
+);
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY;
+  const animationProgress =
+    (scrollPosition / (document.body.scrollHeight - window.innerHeight)) * 100;
+  const animationTarget = animationProgress * 500; // adjust this value to change the animation distance
+
+  animateElement.style.left = `${animationTarget}px`;
 });
 
 
