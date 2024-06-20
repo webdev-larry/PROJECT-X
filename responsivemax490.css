@@ -262,6 +262,7 @@
             line-height: 0rem;
         }
         .about2 .card{
+            background-image: url(https://www.google.com/imgres?q=avatar&imgurl=https%3A%2F%2Fm.media-amazon.com%2Fimages%2FS%2Fpv-target-images%2Fae4816cade1a5b7f29787d0b89610132c72c7747041481c6619b9cc3302c0101.jpg&imgrefurl=https%3A%2F%2Fwww.primevideo.com%2Fdetail%2FAvatar-The-Way-of-Water%2F0R6MAB6Q360AL86YRENF5C0IF3&docid=MCNshJNHSv6EHM&tbnid=f1sa3soWSK7mPM&vet=12ahUKEwjFxeOEt-qGAxV2RkEAHbxUAb8QM3oECCAQAA..i&w=1920&h=2560&hcb=2&ved=2ahUKEwjFxeOEt-qGAxV2RkEAHbxUAb8QM3oECCAQAA) !important;
             
             margin-bottom: 10px !important;
         }
@@ -372,6 +373,11 @@
             color: #f1f1f1;
 
         }
+        .px-2 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+}
 
 
 
