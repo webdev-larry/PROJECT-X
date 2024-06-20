@@ -302,6 +302,7 @@
         }
         .about2 .card{
             height: 30rem !important;
+            margin-bottom: 10px !important;
         }
 
         .sell .container{
