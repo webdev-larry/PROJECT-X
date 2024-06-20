@@ -150,6 +150,17 @@
          margin-left: 3rem;
          font-size: 13px;
          }
+         .services .topic{
+            font-family: 'Irish Grover';
+        font-size: 40px;
+        margin-bottom: 30px;
+        line-height: 2rem;
+        color: var(--secondary);
+         }
+         .services .curv{
+            border-radius: 20px;
+            margin-bottom: 10px;
+         }
          .card i{
          width: 50px;
          margin-bottom: 0.5rem;
@@ -353,7 +364,34 @@
             height: 280px;
             width: 300px;
             padding: 5px;
+            border-radius: 72% 28% 46% 54% / 30% 2% 98% 70% ;
         }
+        .upgrade .btnu {
+  background: #6f2677;
+  background-image: -webkit-linear-gradient(top, #6f2677, #c442d1);
+  background-image: -moz-linear-gradient(top, #6f2677, #c442d1);
+  background-image: -ms-linear-gradient(top, #6f2677, #c442d1);
+  background-image: -o-linear-gradient(top, #6f2677, #c442d1);
+  background-image: linear-gradient(to bottom, #6f2677, #c442d1);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnu:hover {
+  background: #c442d1;
+  background-image: -webkit-linear-gradient(top, #c442d1, #6f2677);
+  background-image: -moz-linear-gradient(top, #c442d1, #6f2677);
+  background-image: -ms-linear-gradient(top, #c442d1, #6f2677);
+  background-image: -o-linear-gradient(top, #c442d1, #6f2677);
+  background-image: linear-gradient(to bottom, #c442d1, #6f2677);
+  text-decoration: none;
+}
         .upgrade a{
             color: #080408;
 
