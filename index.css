@@ -289,7 +289,7 @@ header{
 	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
      }
      .services .sample{
-        background-image: url(/images/images.jpg) ;
+        background-image: url() ;
         background-size: auto;
         background-repeat: no-repeat;
         
