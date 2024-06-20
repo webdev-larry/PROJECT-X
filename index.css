@@ -341,6 +341,10 @@ header{
     height: 200px;
     border-radius: 10px;
      }
+     .services .curv{
+            border-radius: 20px;
+            margin-bottom: 10px;
+         }
   
      section.services .card-grid .card p{
      font-family: "Oswald", sans-serif;
@@ -359,6 +363,9 @@ header{
 
      section .about2{
         padding: 3rem;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 15px;
        
         
         }

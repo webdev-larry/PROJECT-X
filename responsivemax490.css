@@ -287,7 +287,7 @@
 
         section .about2 {
             height: inherit !important;
-            margin-top: 40px !important;
+            margin-top: 60px !important;
             
             
             
@@ -403,7 +403,7 @@
             height: 100px;
             margin-top: 0;
             padding: 0;
-            margin-left: 20px;
+            margin-left: 50px;
             
             
         }
